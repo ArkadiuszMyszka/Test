@@ -1,48 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+
     <!-- Całość pisana ręcznie w celu treningu i przyswajania wiedzy-->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nauka podstaw HTML5 dla początkujących AMyszka" />
-    <title>Test Document</title>
+    
 </head>
 <body>
-    <header><!--semantyka-->
-        <h1>Page title</h1>
-        <ul>
-            <li>Elements</li>
-        </ul>
-    </header>
-    <article> <!--semantyka-->
-        <figure><!--semantyka-->
-            <h2>
-                <p>
-                <a href="https://arkadiuszmyszka.github.io/Test/" target="_blank" title="Adres mojej testowej strony">
-                <!--Link--> AMyszka
-                </a>
-                <!--Obrazek-->
-                <img
-                    src="https://i.ibb.co/5sQgbL5/pobrane.png"
-                    alt="Kurcze, a mialo byc tak pieknie"
-                />
+    <script>
+        function formatMessage(message, maxLength) {
+                let result;
+                // Change code below this line
+                message.length <= maxLength ? message : message.slice(0, maxLength + 1) + "...";
+                /// Change code above this line
+                return result;
+                console.log(result);
+            }
             
-            <!--Akapit-->
-                Treści w trakcie wymyślania. Nie oczekujcie za wiele.
-            </p>
-            </h2>
-        </figure>   
-        <h2>
-            <p>Nad czy popracować</p>
-            <ul>
-                <li>Teoria</li>
-                <li>Praktyka</li>
-                <li>Weryfikacja progressu</li>
-            </ul>
-        </h2>
-    </article>    
-    <footer> 
-    </footer>
+
+            console.log(formatMessage('Curabitur ligula sapien', 16));
+    </script>
 </body>
 </html>
