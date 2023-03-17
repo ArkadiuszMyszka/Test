@@ -6,17 +6,18 @@
 </head>
 <body>
     <script>
-        function formatMessage(message, maxLength) {
-                let result;
+        function makeArray(firstArray, secondArray, maxLength) {
                 // Change code below this line
-                message.length <= maxLength ? message : message.slice(0, maxLength + 1) + "...";
-                /// Change code above this line
-                return result;
-                console.log(result);
+
+                const newArray = firstArray.concat(secondArray);
+                if (newArray.length > maxLength) {
+                    return newArray.slice(maxLenght);
+                }
+                return newArray;
+                // Change code above this line
             }
             
-
-            console.log(formatMessage('Curabitur ligula sapien', 16));
+            
     </script>
 </body>
 </html>
